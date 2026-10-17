@@ -1,1 +1,25 @@
 
+-- ============================================================
+-- SCRIPT PRINCIPAL : BOUTIQUE & ADMIN SYSTEM
+-- Place ce script dans : ServerScriptService -> Script
+-- ============================================================
+
+local Players = game:GetService("Players")
+local MarketPlaceService = game:GetService("MarketplaceService")
+
+-- CONFIGURATION DES ADMINS & RANGS
+local ADMIN_RANGS = {
+    [9967684275] = {Nom = "Grand Boss", Niveau = 3, RobuxIllimites = true}, -- Cédric / Chef
+}
+
+-- CONFIGURATION DES ID PRODUITS ET GAMEPASSES ROBLOX
+-- Remplace ces ID fictifs par tes propres ID créés sur la page du jeu Roblox
+local BOUTIQUE_CONFIG = {
+    Gamepasses = {
+        VIP = {Id = 00000000, Nom = "Pass VIP", Prix = 500},
+        FlyPass = {Id = 00000000, Nom = "Pass Vol", Prix = 300},
+        GodPass = {Id = 00000000, Nom = "Pass Invicibilité", Prix = 1000}
+    },
+    DevProducts = {
+        SmallRobux = {Id = 00000000, Nom = "100 Coins", Recompense = 100},
+        BigRobux = {Id = 000000
